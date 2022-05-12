@@ -60,7 +60,7 @@ swapon /dev/swap_partition
 ### 4. Install default packages
 
 ```
-pacstrap /mnt base linux linux-firmware iwd networkmanager net-tools vim git htop neofetch grub efibootmgr
+pacstrap /mnt base linux linux-firmware grub efibootmgr iwd networkmanager net-tools dhcpcd vim git htop neofetch node icu
 ```
 
 <br/>
