@@ -97,11 +97,25 @@ vim /etc/hostname
 passwd
 ```
 
+<br/>
+
 ### 9. Install GRUB efi as removable disk
 
 ```
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable --recheck --no-nvram
 ```
+
+<br/>
+
+### 10. Safely exit
+
+```
+exit
+umount -R /mnt
+reboot
+```
+
+<br/>
 
 # Post installation
 
