@@ -102,3 +102,11 @@ passwd
 ```
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable --recheck --no-nvram
 ```
+
+# Post installation
+
+### 1. Create User
+
+```
+useradd -m -G wheel -s /bin/bash YOUR_USER_NAME
+```
