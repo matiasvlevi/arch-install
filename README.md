@@ -60,7 +60,7 @@ swapon /dev/swap_partition
 ### 4. Install default packages
 
 ```
-pacstrap /mnt base linux linux-firmware grub efibootmgr iwd networkmanager net-tools dhcpcd vim git htop neofetch node icu
+pacstrap /mnt base linux linux-firmware grub efibootmgr iwd networkmanager net-tools dhcpcd vim git htop neofetch wpa_supplicant
 ```
 
 <br/>
@@ -103,6 +103,10 @@ passwd
 
 ```
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB --removable --recheck --no-nvram
+```
+
+```
+grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 <br/>
